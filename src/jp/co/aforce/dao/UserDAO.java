@@ -9,10 +9,20 @@ import jp.co.aforce.beans.UserBean;
 public class UserDAO extends DAO {
 
 	// 会員情報登録のメソッドも入れるので、メソッド名とDAO名を設計書に寄せる。
-	// メソッド名=servlet名？
+	// メソッド名=servlet名
 	// loginCheck
 	// DAO設計書_UserDAO　UserDAO
-	// servlet設計書の方がよくわからん。action.javaの方だよね？？
+
+
+	/**
+	 * 4/21
+	 * 出戻りしたが、一応作成完了。
+	 * DB接続と画面遷移URL諸々が動かない。
+	 * ファイル名、Dao名、メソッド名辺りの認識が合っているか古賀さんと確認。★
+	 *
+	 *
+	 *
+	 * */
 
 	// ログイン用メソッド
 	public UserBean loginCheck(String member_id, String password) throws Exception {
