@@ -42,7 +42,8 @@ public class LoginServlet extends HttpServlet {
 			// 実行結果が取得できた場合、ユーザ情報を画面に返却する。
 			HttpSession session = request.getSession();
 			session.setAttribute("user", user);
-			response.sendRedirect("user-menu.jsp");
+//			response.sendRedirect("user-menu.jsp");
+			response.sendRedirect("views/user-menu.jsp");
 		} else {
 			// 実行結果が0件の場合、ログインエラー画面に遷移
 			response.sendRedirect(request.getContextPath() + "/views/login-error.jsp");

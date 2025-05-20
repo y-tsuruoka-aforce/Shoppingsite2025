@@ -3,7 +3,8 @@
 <head><title>ログイン</title></head>
 <body>
   <h2>ログイン画面</h2>
-  <form action="loginCheck" method="post">
+<%--  <form action="loginCheck" method="post"> --%>
+  <form method="post">
     <p>ID: <input type="text" name="member_id"></p>
     <p>パスワード: <input type="password" name="password"></p>
 <%--    <p><input type="submit" value="ログイン" formaction="../jp.co.aforce.servlet/login"></p> --%>
