@@ -3,11 +3,12 @@
 <head><title>ログイン</title></head>
 <body>
   <h2>ログイン画面</h2>
-  <form action="loginCheck" method="post">
+<%--① --%> <%-- <form action="login" method="post"> --%>
+<%--② --%>  <form method="post">
     <p>ID: <input type="text" name="member_id"></p>
     <p>パスワード: <input type="password" name="password"></p>
-<%--    <p><input type="submit" value="ログイン" formaction="../jp.co.aforce.servlet/login"></p> --%>
-    <p><input type="submit" value="ログイン" formaction="${pageContext.request.contextPath}/login"></p>
+<%--① --%><%--    <p><input type="submit" value="ログイン" formaction="../jp.co.aforce.servlet/login"></p> --%>
+ <%--② --%>    <p><input type="submit" value="ログイン" formaction="${pageContext.request.contextPath}/login"></p>
   </form>
 
 
@@ -17,3 +18,4 @@
   </form>
 </body>
 </html>
+

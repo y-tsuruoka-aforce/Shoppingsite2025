@@ -18,7 +18,6 @@ public class UserDAO extends DAO {
 	 * 4/21
 	 * 出戻りしたが、一応作成完了。
 	 * DB接続と画面遷移URL諸々が動かない。
-	 * ファイル名、Dao名、メソッド名辺りの認識が合っているか古賀さんと確認。★
 	 *
 	 *
 	 *
@@ -29,14 +28,14 @@ public class UserDAO extends DAO {
 		UserBean user = null;
 
 		// コネクション
-		// TODO DB接続のxml設定をしていない！！！
+		// TODO context.xmlとDAO.javaの設定確認済み
 		Connection con = getConnection();
 		// SQL
 		PreparedStatement st;
 
 		// SQL設定
 		st = con.prepareStatement(
-				"select * from customer where member_id = ? and password = ?"
+				"select * from users where member_id = ? and password = ?"
 				);
 
 		// 検索条件を設定
