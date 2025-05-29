@@ -14,6 +14,7 @@ import jp.co.aforce.beans.UserBean;
 import jp.co.aforce.dao.UserDAO;
 
 @WebServlet("/login")
+//@WebServlet("/views/login")
 //@WebServlet(urlPatterns = { "/jp.co.aforce.servlet/login" })
 public class LoginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
